@@ -51,7 +51,7 @@ public class ReservationActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "시작시간과 종료시간이 동일합니다", Toast.LENGTH_LONG).show();
                 }else {
                     //id 값을 무조건 넣어야 한다.
-                    sqlDB.execSQL("INSERT or replace INTO alarmList (fHour, fMin, tHour, tMin, mon, tue, wed, thu, fri, sat, sun, onOff)" +
+                    sqlDB.execSQL("INSERT INTO alarmList (fHour, fMin, tHour, tMin, mon, tue, wed, thu, fri, sat, sun, onOff)" +
                             "VALUES (" + timePicker1.getHour() + "," + timePicker1.getMinute() + "," + timePicker2.getHour() + ","
                             + timePicker2.getMinute() + "," + monOn + "," + tueOn + "," + wedOn + "," + thuOn + "," + friOn + "," + satOn + "," + sunOn + ", 1);");
                     sqlDB.close();

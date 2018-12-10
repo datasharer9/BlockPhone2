@@ -3,7 +3,9 @@ package com.huiseong.blockphone.adaters;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
+import android.view.MenuInflater;
 import android.view.MotionEvent;
 import android.view.ViewGroup;
 import android.view.View;
@@ -112,12 +114,15 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         ImageButton alarmMenu;
 
 
+
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             timeRange = (TextView)itemView.findViewById(R.id.timeRange);
             day = (TextView) itemView.findViewById(R.id.day);
             alarmOnoff=(Switch) itemView.findViewById(R.id.alarmOnoff);
             alarmMenu=(ImageButton) itemView.findViewById(R.id.alarmMenu);
+
         }
     }
 

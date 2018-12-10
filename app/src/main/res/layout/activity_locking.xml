@@ -16,6 +16,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/blockphone_set" />
 
+    <EditText
+        android:id="@+id/remainTime"
+        android:layout_width="185dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/setDay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
     <android.support.constraint.ConstraintLayout
         android:id="@+id/setDay"
         android:layout_width="0dp"
